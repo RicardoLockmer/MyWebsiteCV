@@ -12,8 +12,9 @@
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
         <!-- Styles -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-        <link rel="stylesheet" href="/css/mycss.css">
+        <!-- TAILWIND -->
+        <!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> -->
+        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css" integrity="sha512-TD/aL30dNLN0VaHVoh9voFlNi7ZuWQYtV4bkIJv2ulZ8mEEkZJ7IyGvDthMKvIUwzLmPONnjQlAi55HTERVXpw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <style>
             .fp-controlArrow.fp-prev{
@@ -58,12 +59,12 @@
                         </div>
                         
                         <div class="mx-4">
-                            <a href="###" class="">
+                            <a target="_blank" href="https://www.linkedin.com/in/ricardo-lockmer-3482b9212/" class="">
                                 LinkedIn
                             </a>
                         </div>
                         <div class="mx-4">
-                            <a href="###" class="">
+                            <a href="https://twitter.com/lockmer_r" class="">
                                 Twitter
                             </a>
                         </div>
@@ -205,7 +206,7 @@
             </div>
             <div class="section bg-gradient-to-t from-indigo-200">
                 
-                <div class="flex justify-center -mt-4 mb-10 lg:pt-10" id="experiencia">
+                <div class="flex justify-center -mt-4 mb-10 lg:pt-10" id="exp">
                     <p class="text-5xl font-bold">Experiencia</p>
                 </div>
                 <div class="slide -mt-28 lg:-mt-24">
@@ -423,7 +424,7 @@
             </div>
         <div class="section bg-gradient-to-b from-indigo-200">
             <div class="flex justify-center -mt-28">
-                <a target="_blank" href="https://github.com/RicardoLockmer" class="flex justify-center font-bold text-2xl rounded-full border border-gray-400 px-4 cursor-pointer" download>
+                <a target="_blank" href="public/RicardoLockmer.pdf" class="flex justify-center font-bold text-2xl rounded-full border border-gray-400 px-4 cursor-pointer" download>
                     DESCARGAR CURRICULUM
                 </a>
                 
@@ -455,7 +456,7 @@
                         </a>
                     </div>
                     <div class="mx-4 my-2">
-                        <a target="_blank" href="###" class="">
+                        <a target="_blank" href="mailto: ricardolockmer@outlook.com" class="">
                     Contacto
                         </a>
                     </div>
@@ -466,19 +467,15 @@
                 </div>
                 <div class=" col-start-6 col-end-8">
                     <div class="mx-6 my-2">
-                        <a href="###" class="">
+                        <a href="mailto: ricardolockmer@outlook.com" class="">
                             ricardolockmer@outlook.com
                         </a>
                     </div>
+                    
                     <div class="mx-6 my-2">
-                        <a href="###" class="">
-                            +506 85832592
-                        </a>
-                    </div>
-                    <div class="mx-6 my-2">
-                        <a href="###" class="">
+                        <p>
                             Tegucigalpa, Honduras
-                        </a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -488,84 +485,84 @@
         <script>
             $(document).ready(function() {
 
-    $('#fullpage').fullpage({
+            $('#fullpage').fullpage({
 
-        //options here
-        menu: '#menu',
-        lockAnchors: false,
-        anchors:['RicardoLockmer', 'Lenguajes', 'Experiencia', 'Habilidades', 'Curriculum'],
-        navigation: true,
-        navigationPosition: 'right',
-        navigationTooltips: ['Main', 'Lenguaje', 'Experiencia', 'Habilidades', 'Curriculum'],
-        showActiveTooltip: false,
-        slidesNavigation: false,
-        slidesNavPosition: 'bottom',
+                //options here
+                menu: '#menu',
+                lockAnchors: false,
+                anchors:['RicardoLockmer', 'Lenguajes', 'Experiencia', 'Habilidades', 'Curriculum'],
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['Main', 'Lenguaje', 'Experiencia', 'Habilidades', 'Curriculum'],
+                showActiveTooltip: false,
+                slidesNavigation: false,
+                slidesNavPosition: 'bottom',
 
-        //Scrolling
-        css3: true,
-        scrollingSpeed: 600,
-        autoScrolling: true,
-        fitToSection: true,
-        fitToSectionDelay: 100,
-        scrollBar: false,
-        loopBottom: true,
-        loopTop: true,
-        loopHorizontal: true,
-        continuousVertical: false,
-        continuousHorizontal: false,
-        scrollHorizontally: false,
-        interlockedSlides: false,
-        dragAndMove: false,
-        offsetSections: false,
-        resetSliders: false,
-        fadingEffect: true,
-        // normalScrollElements: '#null, .null',
-        scrollOverflow: false,
-        scrollOverflowReset: false,
-        scrollOverflowOptions: null,
-        touchSensitivity: 5,
-        bigSectionsDestination: null,
+                //Scrolling
+                css3: true,
+                scrollingSpeed: 600,
+                autoScrolling: true,
+                fitToSection: true,
+                fitToSectionDelay: 100,
+                scrollBar: false,
+                loopBottom: true,
+                loopTop: true,
+                loopHorizontal: true,
+                continuousVertical: false,
+                continuousHorizontal: false,
+                scrollHorizontally: false,
+                interlockedSlides: false,
+                dragAndMove: false,
+                offsetSections: false,
+                resetSliders: false,
+                fadingEffect: true,
+                // normalScrollElements: '#null, .null',
+                scrollOverflow: false,
+                scrollOverflowReset: false,
+                scrollOverflowOptions: null,
+                touchSensitivity: 5,
+                bigSectionsDestination: null,
 
-        //Accessibility
-        keyboardScrolling: true,
-        animateAnchor: true,
-        recordHistory: true,
+                //Accessibility
+                keyboardScrolling: true,
+                animateAnchor: true,
+                recordHistory: true,
 
-        //Design
-        controlArrows: true,
-        verticalCentered: true,
-        
-        paddingTop: '3em',
-        paddingBottom: '10px',
-        fixedElements: '#header, .footer',
-        responsiveWidth: 0,
-        responsiveHeight: 0,
-        responsiveSlides: false,
-        parallax: false,
-        parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
-        dropEffect: false,
-        dropEffectOptions: { speed: 2300, color: '#F82F4D', zIndex: 9999},
-        waterEffect: false,
-        waterEffectOptions: { animateContent: true, animateOnMouseMove: true},
-        cards: false,
-        cardsOptions: {perspective: 100, fadeContent: true, fadeBackground: true},
+                //Design
+                controlArrows: true,
+                verticalCentered: true,
+                
+                paddingTop: '3em',
+                paddingBottom: '10px',
+                fixedElements: '#header, .footer',
+                responsiveWidth: 0,
+                responsiveHeight: 0,
+                responsiveSlides: false,
+                parallax: false,
+                parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+                dropEffect: false,
+                dropEffectOptions: { speed: 2300, color: '#F82F4D', zIndex: 9999},
+                waterEffect: false,
+                waterEffectOptions: { animateContent: true, animateOnMouseMove: true},
+                cards: false,
+                cardsOptions: {perspective: 100, fadeContent: true, fadeBackground: true},
 
-        //Custom selectors
-        sectionSelector: '.section',
-        slideSelector: '.slide',
+                //Custom selectors
+                sectionSelector: '.section',
+                slideSelector: '.slide',
 
-        lazyLoading: true,
+                lazyLoading: true,
 
-        //events
-        // onLeave: function(origin, destination, direction){},
-        // afterLoad: function(origin, destination, direction){},
-        // afterRender: function(){},
-        // afterResize: function(width, height){},
-        // afterReBuild: function(){},
-        // afterResponsive: function(isResponsive){},
-        // afterSlideLoad: function(section, origin, destination, direction){},
-        // onSlideLeave: function(section, origin, destination, direction){}
-    });
+                //events
+                // onLeave: function(origin, destination, direction){},
+                // afterLoad: function(origin, destination, direction){},
+                // afterRender: function(){},
+                // afterResize: function(width, height){},
+                // afterReBuild: function(){},
+                // afterResponsive: function(isResponsive){},
+                // afterSlideLoad: function(section, origin, destination, direction){},
+                // onSlideLeave: function(section, origin, destination, direction){}
+            });
 
         //methods
         $.fn.fullpage.setAllowScrolling(true);
