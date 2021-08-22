@@ -436,7 +436,7 @@
                 </a>
                 <a target="_blank" href="https://github.com/RicardoLockmer?tab=repositories" class="text-sm hover:text-blue-400 cursor-pointer mt-2 font-bold text-gray-600 rounded-full border border-gray-400 py-1 px-4">Proyectos</a>
             </div>
-            <div class="grid grid-cols-7 h-auto absolute bottom-0 bg-gray-700 py-10 text-white">
+            <div class="grid grid-cols-7 h-auto w-full absolute bottom-0 bg-gray-700 py-10 text-white">
                 <div class=" col-start-2">
                     <div class="mx-4 my-2">
                         <a target="_blank" href="###" class="">
@@ -485,7 +485,95 @@
         </div>
         </div>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <script src="/public/javascript/fullpage.js"></script>
+        <script>
+            $(document).ready(function() {
+
+    $('#fullpage').fullpage({
+
+        //options here
+        menu: '#menu',
+        lockAnchors: false,
+        anchors:['RicardoLockmer', 'Lenguajes', 'Experiencia', 'Habilidades', 'Curriculum'],
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['Main', 'Lenguaje', 'Experiencia', 'Habilidades', 'Curriculum'],
+        showActiveTooltip: false,
+        slidesNavigation: false,
+        slidesNavPosition: 'bottom',
+
+        //Scrolling
+        css3: true,
+        scrollingSpeed: 600,
+        autoScrolling: true,
+        fitToSection: true,
+        fitToSectionDelay: 100,
+        scrollBar: false,
+        loopBottom: true,
+        loopTop: true,
+        loopHorizontal: true,
+        continuousVertical: false,
+        continuousHorizontal: false,
+        scrollHorizontally: false,
+        interlockedSlides: false,
+        dragAndMove: false,
+        offsetSections: false,
+        resetSliders: false,
+        fadingEffect: true,
+        // normalScrollElements: '#null, .null',
+        scrollOverflow: false,
+        scrollOverflowReset: false,
+        scrollOverflowOptions: null,
+        touchSensitivity: 5,
+        bigSectionsDestination: null,
+
+        //Accessibility
+        keyboardScrolling: true,
+        animateAnchor: true,
+        recordHistory: true,
+
+        //Design
+        controlArrows: true,
+        verticalCentered: true,
+        
+        paddingTop: '3em',
+        paddingBottom: '10px',
+        fixedElements: '#header, .footer',
+        responsiveWidth: 0,
+        responsiveHeight: 0,
+        responsiveSlides: false,
+        parallax: false,
+        parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+        dropEffect: false,
+        dropEffectOptions: { speed: 2300, color: '#F82F4D', zIndex: 9999},
+        waterEffect: false,
+        waterEffectOptions: { animateContent: true, animateOnMouseMove: true},
+        cards: false,
+        cardsOptions: {perspective: 100, fadeContent: true, fadeBackground: true},
+
+        //Custom selectors
+        sectionSelector: '.section',
+        slideSelector: '.slide',
+
+        lazyLoading: true,
+
+        //events
+        // onLeave: function(origin, destination, direction){},
+        // afterLoad: function(origin, destination, direction){},
+        // afterRender: function(){},
+        // afterResize: function(width, height){},
+        // afterReBuild: function(){},
+        // afterResponsive: function(isResponsive){},
+        // afterSlideLoad: function(section, origin, destination, direction){},
+        // onSlideLeave: function(section, origin, destination, direction){}
+    });
+
+        //methods
+        $.fn.fullpage.setAllowScrolling(true);
+        });
+
+        </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <!-- <script src="/public/javascript/fullpage.js"></script> -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js" integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         
         
